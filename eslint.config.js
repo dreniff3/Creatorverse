@@ -8,6 +8,10 @@ export default defineConfig([
   globalIgnores(['dist']),
   {
     files: ['**/*.{js,jsx}'],
+    env: {
+      browser: true,
+      node: true,
+    },
     extends: [
       js.configs.recommended,
       reactHooks.configs['recommended-latest'],
