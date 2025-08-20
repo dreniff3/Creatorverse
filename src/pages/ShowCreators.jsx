@@ -9,13 +9,12 @@ const ShowCreators = ({ creators, loading }) => {
     <div>
       <div className="row" style={{ justifyContent: "space-between" }}>
         <h2>All Creators</h2>
-        <Link className="btn primary" to="/creators/new">+ Add Creators</Link>
       </div>
 
       {(!creators || creators.length === 0 ? (
         <div className='center'>
           <p>No content creators yet. Add your first one!</p>
-          <Link className="btn primary" to="/creators/new">Create Creator</Link>
+          <Link className="btn primary" to="/creators/new">+ Add Creator</Link>
         </div>
       ) : (
         <div className="grid">
