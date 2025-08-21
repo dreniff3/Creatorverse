@@ -6,7 +6,7 @@ const ShowCreators = ({ creators, loading }) => {
   if (loading) return <div className="center">Loading creators...</div>;
   
   return (
-    <div>
+    <section className="all">
       <div className="row" style={{ justifyContent: "space-between" }}>
         <h2>All Creators</h2>
       </div>
@@ -23,7 +23,7 @@ const ShowCreators = ({ creators, loading }) => {
           ))}
         </div>
       ))}
-    </div>
+    </section>
   );
 }
 

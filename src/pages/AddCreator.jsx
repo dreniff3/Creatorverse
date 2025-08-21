@@ -78,8 +78,7 @@ const AddCreator = () => {
         <div className="field">
           <label htmlFor="description">Description</label>
           <textarea name="description" id="description" className="textarea"
-           value={form.description} onChange={(e) => update("description", e.target.value)} 
-           required />
+           value={form.description} onChange={(e) => update("description", e.target.value)} />
         </div>
 
         <div className="field">

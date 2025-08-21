@@ -92,8 +92,8 @@ const EditCreator = () => {
   if (loading) return <div className='center'>Loading...</div>;
 
   return (
-    <div>
-      <div className="row" style={{ justifyContent: "space-between" }}>
+    <section className='edit'>
+      <div className="row">
         <h2>Edit Creator</h2>
         <Link className='btn' to={`/creators/${id}`}>View</Link>
       </div>
@@ -116,7 +116,7 @@ const EditCreator = () => {
         <div className="field">
           <label htmlFor="description">Description</label>
           <textarea className='textarea' id="description" value={form.description} 
-           onChange={(e) => update("description", e.target.value)} required />
+           onChange={(e) => update("description", e.target.value)} />
         </div>
 
         <div className="field">
@@ -131,11 +131,10 @@ const EditCreator = () => {
           <button className="btn primary" type="submit"
            disabled={saving}>{saving ? "Saving..." : "Save Changes"}</button>
           <button className="btn" type="button" onClick={() => navigate(-1)}>Cancel</button>
-          <div style={{ flex: 1 }} />
           <button className="btn danger" type="button" onClick={handleDelete}>Delete</button>
         </div>
       </form>
-    </div>
+    </section>
   );
 }
 
