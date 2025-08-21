@@ -1,12 +1,60 @@
-# React + Vite
+# Creatorverse 💫
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A person's top content creators can say a lot about them. Do they prefer lockpicking videos 🔒, casual art streams 🖼️, or hustle-culture TikTokers 📱?
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- **CRUD Functionality**
+  - Add a new content creator (name, URL, description, optional image).
+  - View all content creators.
+  - View details for a single creator on their own page.
+  - Update creator info at any time.
+  - Delete creators.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Database Integration**
+  - Powered by [Supabase](https://supabase.com/).
+  - Real-time updates with Supabase's client library.
+
+---
+
+## 📸 Screenshot
+ 
+Example of the app with the required features implemented.
+
+---
+
+## 🛠️ Tech Stack
+
+- [React](https://react.dev/) + [Vite](https://vitejs.dev/) ⚡
+- [React Router](https://reactrouter.com/) 🔗
+- [Supabase](https://supabase.com/) 🗄️
+
+---
+
+## ⚙️ Setup & Running Locally
+
+### 1. Clone the Repository
+```
+git clone https://github.com/dreniff3/Creatorverse.git
+cd creatorverse
+```
+
+###  2. Install Dependencies
+```
+npm install
+```
+
+### 3. Configure Environment Variables
+In the ```client.js``` file, set the value for ```URL``` to your Supabase project URL and ```API_KEY``` to your Supabase project API key:
+```
+const URL = 'your-supabase-project-url';
+const API_KEY = 'your-supabase-project-api-key';
+```
+
+### 4. Start the Dev Server
+```
+npm run dev
+```
+Your app should now be running at [http://localhost:5173↗](http://localhost:5173)🎉
