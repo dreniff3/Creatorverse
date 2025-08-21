@@ -49,7 +49,8 @@ function App() {
   return (
     <div className='container'>
       <nav className='nav'>
-        <Link to="/" className='brand'>💫 Creatorverse</Link>
+        <Link to="/" className='title'>💫 Creatorverse</Link>
+        <Link className="btn primary" to="/creators/new">+ Add Creator</Link>
       </nav>
       {routes}
     </div>
