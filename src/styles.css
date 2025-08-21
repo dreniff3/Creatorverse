@@ -74,6 +74,7 @@ section.all {
   width: 100%;
   object-fit: contain;
   align-self: center;
+  max-height: 35vh;
 }
 
 .card > p {
